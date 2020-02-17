@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Doe Sangue! Doe Vida!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/index.css">
+
+
+</head>
+
+<body>
+
+    <header class="head">
+
+        <img src="./img/doe_sangue.png" alt='doeSangue'/>
+        <h2>A sua doação importa</h2>
+        <p>Até 3 vidas com 1 doação</p>
+        <p>Mais de 38.000 doações são necessarias todos os dias!</p>
+        <p>Apenas 1,9% da população brasileira, doa sangue!</p>
+
+    </header>
+
+    <button onClick="esconderForm()">Quero Ajudar</button>
+    <section class="form" display='none'>
+        <h2>Entre na lista de doadores</h2>
+        <form action="/" >
+            <input 
+                type="text"
+                name='name'
+                placeholder="Nome Completo">
+
+            <input 
+                type="text"
+                name='email'
+                placeholder="e-mail">
+
+            <input 
+                type="text"
+                name='blood'
+                placeholder="Tipo Sanguineo">
+
+            
+
+        </form>
+    </section>    
+
+    <main class="donors">
+        <h2>Ultimos doadores... <span class='hearth'>❤ ❤ ❤</span></h2>
+        <section>
+
+            <div class="cardDonor">
+                <div class="donor">Paulo Belucci</div>
+                <div class="blood">❤ AB+</div>
+            </div>
+            
+            <div class="cardDonor">
+                <div class="donor">Caio A</div>
+                <div class="blood">❤ B+</div>
+            </div>
+
+            <div class="cardDonor">
+                <div class="donor">Adila A.</div>
+                <div class="blood">❤ O+</div>
+            </div>
+
+            <div class="cardDonor">
+                <div class="donor">Sivio C.</div>
+                <div class="blood">❤ B-</div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        Feito com carinho por Paulo Belucci 😜.
+    </footer>
+
+    <script>
+
+        
+        function esconderForm() {
+
+            var display = document.querySelector('.form');
+
+            if(display.style.display === "none")
+                document.querySelector('.form').style.display = 'flex';
+            else
+            document.querySelector('.form').style.display = 'none';
+        }
+        
+    </script>
+
+</body>
+
+</html>
